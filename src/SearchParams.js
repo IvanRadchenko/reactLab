@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import { ANIMALS } from "@frontendmasters/pet";
+import useDropdown from "./useDropdown";
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
-  const [animal, setAnimal] = useState("Dog");
-  const [breed, setBreed] = useState("");
   const [breeds, setBreeds] = useState([]);
+  // const [animal, setAnimal] = useState("Dog");
+  // const [breed, setBreed] = useState("");
+  /* Instead of repeating same dropdown tracking of different props
+  we can create a custom Hook and import it here to create Dropdowns
+  aka hide the whole logic into a separate class */
+  const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
+  const [breed, BreedDropdown] = useDropdown("Breed", "", breeds);
 
   return (
     <div className="search-params">
@@ -20,7 +26,11 @@ const SearchParams = () => {
             onChange={e => setLocation(e.target.value)}
           />
         </label>
-        <label htmlFor="animal">
+        <AnimalDropdown />
+        <BreedDropdown />
+        {/*We delete this cause we created a Custom Class HOOK component
+        to create those dropwon lists
+         <label htmlFor="animal">
           Animal
           <select
             id="animal"
@@ -53,7 +63,7 @@ const SearchParams = () => {
               </option>
             ))}
           </select>
-        </label>
+        </label> */}
         <buton>Submit</buton>
       </form>
     </div>
