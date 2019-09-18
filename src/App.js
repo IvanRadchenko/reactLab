@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import Toogler from "./Toogler";
 import ControlledInput from "./ControlledInput";
 import ControlledForm from "./ControlledForm";
+import LifeCycle from "./LifeCycle";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Toogler />
       <ControlledInput />
       <ControlledForm />
+      <LifeCycle />
     </div>
   );
 };
