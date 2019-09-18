@@ -4,14 +4,16 @@ import "./App.css";
 import Counter from "./Counter";
 import Toogler from "./Toogler";
 import ControlledInput from "./ControlledInput";
+import ControlledForm from "./ControlledForm";
 
 const App = () => {
   return (
-    <div>
+    <div className="main-container">
       <h1 id="something-important">Examples</h1>
       <Counter title="Counter test" />
       <Toogler />
       <ControlledInput />
+      <ControlledForm />
     </div>
   );
 };
