@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "@reach/router";
 
 export default class Pet extends React.Component {
@@ -27,6 +28,17 @@ export default class Pet extends React.Component {
           </h2>
         </div>
       </Link>
+=======
+
+export default class Pet extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.name}</h1>
+        <h2>{this.props.animal}</h2>
+        <h2>{this.props.breed}</h2>
+      </div>
+>>>>>>> Add App for Pet App in reactv4
     );
   }
 }
