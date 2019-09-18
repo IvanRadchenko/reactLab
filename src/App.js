@@ -6,6 +6,7 @@ import Toogler from "./Toogler";
 import ControlledInput from "./ControlledInput";
 import ControlledForm from "./ControlledForm";
 import LifeCycle from "./LifeCycle";
+import Ternary from "./Ternary";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <ControlledInput />
       <ControlledForm />
       <LifeCycle />
+      <Ternary />
     </div>
   );
 };
