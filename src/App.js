@@ -7,6 +7,7 @@ import ControlledInput from "./ControlledInput";
 import ControlledForm from "./ControlledForm";
 import LifeCycle from "./LifeCycle";
 import Ternary from "./Ternary";
+import ToDoList from "./ToDoList";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <ControlledForm />
       <LifeCycle />
       <Ternary />
+      <ToDoList />
     </div>
   );
 };
