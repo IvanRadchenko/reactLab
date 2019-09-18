@@ -326,11 +326,20 @@ header {
 .divider {
   border: 3px solid black;
   margin-left: 20px;
+  margin-block-end: 20px;
   background: white;
   width: 300px;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+/* Visibility Toogler */
+.el--visible {
+  visibility: initial;
+}
+.el--hidden {
+  visibility: hidden;
 }
