@@ -16,7 +16,7 @@ export default class Pet extends React.Component {
     }
 
     return (
-      <Link to={`/detauls/${id}`} className="pet">
+      <Link to={`/details/${id}`} className="pet">
         <div className="image-container">
           <img src={photos[0].value} alt={name} />
         </div>
