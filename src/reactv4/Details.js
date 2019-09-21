@@ -1,6 +1,7 @@
 import React from "react";
 import pf from "petfinder-client";
 import Carousel from "./Carousel";
+import Modal from "./Modal";
 
 const petfinder = pf({
   key: process.env.API_KEY,
@@ -10,9 +11,12 @@ class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true
+      loading: true,
+      showModal: true
     };
   }
+
+  toogleModal = () => this.setState({ showModal: !this.state.showModal });
 
   componentDidMount() {
     petfinder.pet
@@ -47,7 +51,15 @@ class Details extends React.Component {
     if (this.state.loading) {
       return <h1>loading...</h1>;
     }
-    const { name, animal, breed, location, description, media } = this.state;
+    const {
+      name,
+      animal,
+      breed,
+      location,
+      description,
+      media,
+      showModal
+    } = this.state;
     console.log(description);
     return (
       <div className="details">
@@ -57,7 +69,17 @@ class Details extends React.Component {
           <h2>
             {animal} - {breed} - {location}
           </h2>
+          <button onClick={this.toogleModal}>Adopt {name}</button>
           <p>{description}</p>
+          {showModal ? (
+            <Modal>
+              <h1>Would u like to adopt {name}</h1>
+              <div className="buttons">
+                <button onClick={this.toogleModal}>Yes</button>
+                <button onClick={this.toogleModal}>Not</button>
+              </div>
+            </Modal>
+          ) : null}
         </div>
       </div>
     );
