@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import pf from "petfinder-client";
 import Pet from "./Pet.js";
+import SearchBox from "./SearchBox";
 
 const petfinder = pf({
   key: process.env.API_KEY,
@@ -41,6 +42,7 @@ export default class Results extends React.Component {
   render() {
     return (
       <div className="search">
+        <SearchBox />
         <div>
           {this.state.pets.map(pet => {
             let breed;
