@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Pet from "./Pet";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 import useDropdown from "./useDropdown";
 import Results from "./Results";
