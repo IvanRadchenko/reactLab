@@ -2,14 +2,23 @@ import React from "react";
 import { render } from "react-dom";
 import styles from "../App.css";
 import Pet from "./Pet";
+import { Router, Link } from "@reach/router";
 import SearchParams from "./SearchParams";
+import Details from "./Details";
 
 export default function App() {
   return (
-    <div>
-      <h1 id="something-important">Adop me!</h1>
-      <SearchParams />
-    </div>
+    <React.StrictMode>
+      <div>
+        <header>
+          <Link to="/">Adop me!</Link>
+        </header>
+        <Router>
+          <SearchParams path="/" />
+          <Details path="/details/:id" />
+        </Router>
+      </div>
+    </React.StrictMode>
   );
 }
 
