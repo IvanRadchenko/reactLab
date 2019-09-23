@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import State from "./State";
 import Effect from "./Effect";
+import Context from "./Context";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <State />
       <hr />
       <Effect />
-      <h1 />
+      <hr />
+      <Context />
     </div>
   );
 };
