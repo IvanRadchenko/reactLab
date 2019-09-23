@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import "./index.css";
-import App from "./reactv5/App";
+// import App from "./reactv5/App";
 // import App from "./reactv4/App.js";
 import * as serviceWorker from "./serviceWorker";
 
