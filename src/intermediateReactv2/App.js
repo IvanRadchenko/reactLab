@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import State from "./State";
 import Effect from "./Effect";
 import Context from "./Context";
+import Ref from "./Ref";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
       <Effect />
       <hr />
       <Context />
+      <hr />
+      <Ref />
     </div>
   );
 };
