@@ -1,6 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-<<<<<<< HEAD
 import { Router, Link } from "@reach/router";
 import Results from "./Results";
 import Details from "./Details";
@@ -81,7 +80,7 @@ class App extends React.Component {
         <Link to="/">
           <h1>Adopt me</h1>
         </Link>
-<<<<<<< HEAD
+
         <Provider value={this.state}>
           <Router>
             <Results path="/" />
@@ -89,30 +88,6 @@ class App extends React.Component {
             <SearchParams path="/search-params" />
           </Router>
         </Provider>
-=======
-
-        <Router>
-          <Results path="/" />
-          <Details path="/details/:id" />
-          <SearchParams path="/search-params" />
-        </Router>
-=======
-import "../App.css";
-import Pet from "./Pet.js";
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <h1>Adopt Me!</h1>
-        <Pet name="Luna" animal="dog" breed="Havanese" />
-        <Pet name="Pepper" animal="bird" breed="Cock" />
-        <Pet name="Doink" animal="cat" breed="Mix" />
->>>>>>> Add App for Pet App in reactv4
->>>>>>> Add App for Pet App in reactv4
       </div>
     );
   }
