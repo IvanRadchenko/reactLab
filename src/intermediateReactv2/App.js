@@ -6,6 +6,7 @@ import Context from "./Context";
 import Ref from "./Ref";
 import Wrapper from "./MountedCounter";
 import Reducer from "./Reducer";
+import Memo from "./Memo";
 const App = () => {
   return (
     <div>
@@ -20,6 +21,8 @@ const App = () => {
       <Wrapper />
       <hr />
       <Reducer />
+      <hr />
+      <Memo />
     </div>
   );
 };
