@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 const Effect = () => {
   const [time, setTime] = useState(new Date());
 
-  useEffect(() => {
-    const timer = setTimeout(setTime(new Date()), 1000);
-    return () => clearTimeout(timer);
-  });
+  // useEffect(() => {
+  //   const timer = setTimeout(setTime(new Date()), 1000);
+  //   return () => clearTimeout(timer);
+  // }, [time, setTime]);
 
   return (
     <div>
