@@ -5,6 +5,7 @@ import Effect from "./Effect";
 import Context from "./Context";
 import Ref from "./Ref";
 import Wrapper from "./MountedCounter";
+import Reducer from "./Reducer";
 const App = () => {
   return (
     <div>
@@ -17,6 +18,8 @@ const App = () => {
       <Ref />
       <hr />
       <Wrapper />
+      <hr />
+      <Reducer />
     </div>
   );
 };
