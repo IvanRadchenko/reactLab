@@ -1,0 +1,21 @@
+/* Boxes */
+.box {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.box--small {
+  width: 120px;
+  height: 120px;
+}
+
+.box--medium {
+  width: 200px;
+  height: 200px;
+}
+
+.box--large {
+  width: 300px;
+  height: 300px;
+}
